@@ -27,25 +27,27 @@ public class DCP01 {
         boolean rep = false;
         int i, j, k;
         
-        k = (int) (Math.random()*75);
+        k = (int) (Math.random()*75); //assigning k with a random number between 0 and 75
         
-        for(i=0; i<list.length; i++){
+        for(i=0; i<list.length; i++){ //loop to assign random values to the list
             list[i] = (int) (Math.random()*50);
         }
         
         for(i=0; i<list.length; i++){
-            for(j=0; j<list.length; j++){
-                if(list[i]+list[j] == k){
+            for(j=0; j<list.length; j++){  
+                if(list[i]+list[j] == k){ //loop to check if numbers add up to k
                     rep = true;
                 }
             }
-        } System.out.println(rep);
+        } System.out.println(rep); //print answer
         
+        /*
+        * Validation :
         System.out.println("k = "+k);
         for(int el : list){
             System.out.print(el+" ");
         }
-        
+        */
         
         
     }
