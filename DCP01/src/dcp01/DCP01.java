@@ -23,6 +23,29 @@ public class DCP01 {
      * Bonus: Can you do this in one pass?
      */    
     
+        int list[] = new int[8];
+        boolean rep = false;
+        int i, j, k;
+        
+        k = (int) (Math.random()*75);
+        
+        for(i=0; i<list.length; i++){
+            list[i] = (int) (Math.random()*50);
+        }
+        
+        for(i=0; i<list.length; i++){
+            for(j=0; j<list.length; j++){
+                if(list[i]+list[j] == k){
+                    rep = true;
+                }
+            }
+        } System.out.println(rep);
+        
+        System.out.println("k = "+k);
+        for(int el : list){
+            System.out.print(el+" ");
+        }
+        
         
         
     }
