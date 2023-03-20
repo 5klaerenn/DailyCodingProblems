@@ -29,13 +29,15 @@ public class DCP02 {
     
     int myArray[] = {1, 2, 3, 4, 5};
     int newArray[] = new int[5];
-    int i,j,product;
+    int i,j, product;
+    int div = 0;
     product = 1;
     
-    for(j=1; j < myArray.length+1; j++){
-        product *= j;
-    }
     
+        for(j = 0; j < myArray.length; j++){
+            product *= myArray[j];
+        }  
+
         System.out.println(product);
         
         
