@@ -27,22 +27,22 @@ public class DCP02 {
      * Follow-up: what if you can't use division?
      */    
     
-    int myArray[] = {1, 2, 3, 4, 5};
-    int newArray[] = new int[5];
+    int myArray[] = {1, 2, 3, 4, 5}; //initializing original array ;
+    int newArray[] = new int[5]; // initializing new array;
     int i,product; 
     product = 1;
     
     for(i=0; i < myArray.length; i++){
-        product *= myArray[i];
+        product *= myArray[i]; // loop to get the product of all numbers of original array;
     }
     
     for(i=0; i < newArray.length; i++){
-        newArray[i] = product/myArray[i];
+        newArray[i] = product/myArray[i]; // loop to remove i from the product
     }
     
     for(int el : newArray){
-        System.out.println(el);
+        System.out.print(el+" "); // output
     }
-    
+        
     }
 }
