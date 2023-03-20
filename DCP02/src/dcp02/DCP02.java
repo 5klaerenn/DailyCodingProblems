@@ -26,6 +26,17 @@ public class DCP02 {
      * 
      * Follow-up: what if you can't use division?
      */    
+    
+    int myArray[] = {1, 2, 3, 4, 5};
+    int newArray[] = new int[5];
+    int i,j,product;
+    product = 1;
+    
+    for(j=1; j < myArray.length+1; j++){
+        product *= j;
+    }
+    
+        System.out.println(product);
         
         
     }
