@@ -29,18 +29,20 @@ public class DCP02 {
     
     int myArray[] = {1, 2, 3, 4, 5};
     int newArray[] = new int[5];
-    int i,j, product;
-    int div = 0;
+    int i,product; 
     product = 1;
     
-    
-        for(j = 0; j < myArray.length; j++){
-            product *= myArray[j];
-        }  
-
-        System.out.println(product);
-        
-        
+    for(i=0; i < myArray.length; i++){
+        product *= myArray[i];
     }
     
+    for(i=0; i < newArray.length; i++){
+        newArray[i] = product/myArray[i];
+    }
+    
+    for(int el : newArray){
+        System.out.println(el);
+    }
+    
+    }
 }
